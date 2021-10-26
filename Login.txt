@@ -1,0 +1,24 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
+
+public class Login extends JFrame {
+	
+	private JTextField txtlogin;
+	private JPasswordField txtsenha;
+	private JLabel lbllogin, lblsenha;
+	private JButton btnentrar;
+	private JButton btncancelar;
+	private static Login janela;
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
