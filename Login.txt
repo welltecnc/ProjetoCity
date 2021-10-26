@@ -1,6 +1,11 @@
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
@@ -13,7 +18,13 @@ public class Login extends JFrame {
 	private JButton btncancelar;
 	private static Login janela;
 	
+	private Font font = new Font("Arial",Font.BOLD, 15);
+	private Font fontee = new Font("Arial",Font.BOLD,13);
 	
+	public Login()
+	{
+		
+	}
 	
 
 	public static void main(String[] args) {
