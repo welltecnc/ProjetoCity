@@ -17,7 +17,7 @@ import javax.swing.UIManager;
 public class Login extends JFrame {
 	
 	private JTextField txtlogin;
-	private JPasswordField txtsenha;
+	private JPasswordField senha;
 	private JLabel lbllogin, lblsenha,lblnome;
 	private JButton btnentrar;
 	private JButton btncancelar;
@@ -42,7 +42,7 @@ public class Login extends JFrame {
 		setBounds(0,0,300,250);
 		setLayout(null);
 		txtlogin = new JTextField(10);
-		txtsenha = new JPasswordField(8);
+		senha = new JPasswordField(8);
 		lblnome = new JLabel("Login");
 		lbllogin = new JLabel("usuario ");
 		lblsenha = new JLabel("Senha");
@@ -53,17 +53,19 @@ public class Login extends JFrame {
 		
 		lblnome.setBounds(119,10,80,25);
 		txtlogin.setBounds(150,50,80,25);
-		lbllogin.setBounds(50,50,80,25);
-		lblsenha.setBounds(150,95,80,25);
+		lbllogin.setBounds(50,50,80,25);	
+		senha.setBounds(150,95,80,25);
+		lblsenha.setBounds(50,95,80,25);
 		btnentrar.setBounds(40,140,100,25); 
 		btnentrar.setFont(fontee); 
-		btncancelar.setBounds(40,140,100,25); 
+		btncancelar.setBounds(150,140,100,25); 
 		btncancelar.setFont(fontee); 
 		
 		add(lblnome);
 		add(lbllogin);
 		add(txtlogin);
-		add(txtsenha);
+		add(lblsenha);
+		add(senha);
 		add(btnentrar);
 		add(btncancelar);		
 	}
@@ -73,7 +75,7 @@ public class Login extends JFrame {
 		
 		btnentrar.addActionListener(new ActionListener() {
 			public void  actionPerformed(ActionEvent e) {
-				String senha1 = String.valueOf(txtsenha.getPassword()); 
+				String senha1 = String.valueOf(senha.getPassword()); 
 				
 				if(txtlogin.getText().equals("1") && senha1.equals("1"))
 						{
